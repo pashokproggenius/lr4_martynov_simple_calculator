@@ -5,39 +5,19 @@
 
 using namespace std;
 
-float parseAddition() {
-	float a=0, b=0;
-	cout << "Enter the first value: ";
-	cin >> a;
-	cout << "Enter the second value: ";
-	cin >> b;
+float parseAddition(float a, float b) {
 	return a + b;
 }
 
-float parseSubtraction() {
-	float a=0, b=0;
-	cout << "Enter the first value: ";
-	cin >> a;
-	cout << "Enter the second value: ";
-	cin >> b;
+float parseSubtraction(float a, float b) {
 	return a - b;
 }
 
-float parseMultiplication() {
-	float a=0, b=0;
-	cout << "Enter the first value: ";
-	cin >> a;
-	cout << "Enter the second value: ";
-	cin >> b;
+float parseMultiplication(float a, float b) {
 	return a * b;
 }
 
-float parseDivision() {
-	float a=0, b=0;
-	cout << "Enter the first value: ";
-	cin >> a;
-	cout << "Enter the second value: ";
-	cin >> b;
+float parseDivision(float a, float b) {
 	if(b != 0) {
 		return a / b;
 	}else{
@@ -45,45 +25,32 @@ float parseDivision() {
 	}
 }
 
-float parseExponentiation() {
-	float a=0, r=0;
-	int b=0;
-	cout << "Enter the first value: ";
-	cin >> a;
-	cout << "Enter the second value: ";
-	cin >> b;
+float parseExponentiation(float a, float b) {
+	float r=0;
 	r=pow(a, b);
 	return r;
 }
 
-float parseSquareRoot() {
-	float a=0, r=0;
-	cout << "Enter the value: ";
-	cin >> a;
+float parseSquareRoot(float a) {
+	float r=0;
 	r=sqrt(a);
 	return r;
 }
 
-float parseSine() {
-	float a=0, r=0;
-	cout << "Enter the value: ";
-	cin >> a;
+float parseSine(float a) {
+	float r=0;
 	r=sin(a);
 	return r;
 }
 
-float parseCosine() {
-	float a=0, r=0;
-	cout << "Enter the value: ";
-	cin >> a;
+float parseCosine(float a) {
+	float r=0;
 	r=cos(a);
 	return r;
 }
 
-float parseTangent() {
-	float a=0, r=0;
-	cout << "Enter the value: ";
-	cin >> a;
+float parseTangent(float a) {
+	float r=0;
 	r=tan(a);
 	return r;
 }
@@ -102,6 +69,7 @@ void help() {
 	cout << "\t t\t\t Tangent of a number\n";
 	cout << "\t h\t\t Help\n";
 	cout << "\t e\t\t Exit\n";
+	cout << "\t l\t\t Start tests\n";
 	cout << "\n\n";
 }
 
