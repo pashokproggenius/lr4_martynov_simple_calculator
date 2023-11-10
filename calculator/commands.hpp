@@ -1,48 +1,51 @@
 
 #include <iostream>
+#include <string>
 #include <math.h>
 
 using namespace std;
 
-void parseAddition() {
+float parseAddition() {
 	float a=0, b=0;
 	cout << "Enter the first value: ";
 	cin >> a;
 	cout << "Enter the second value: ";
 	cin >> b;
-	cout << a + b << endl;
+	return a + b;
 }
 
-void parseSubtraction() {
+float parseSubtraction() {
 	float a=0, b=0;
 	cout << "Enter the first value: ";
 	cin >> a;
 	cout << "Enter the second value: ";
 	cin >> b;
-	cout << a - b << endl;
+	return a - b;
 }
 
-void parseMultiplication() {
+float parseMultiplication() {
 	float a=0, b=0;
 	cout << "Enter the first value: ";
 	cin >> a;
 	cout << "Enter the second value: ";
 	cin >> b;
-	cout << a * b << endl;
+	return a * b;
 }
 
-void parseDivision() {
+float parseDivision() {
 	float a=0, b=0;
 	cout << "Enter the first value: ";
 	cin >> a;
 	cout << "Enter the second value: ";
 	cin >> b;
 	if(b != 0) {
-		cout << a / b << endl;
+		return a / b;
+	}else{
+	return 0;
 	}
 }
 
-void parseExponentiation() {
+float parseExponentiation() {
 	float a=0, r=0;
 	int b=0;
 	cout << "Enter the first value: ";
@@ -50,39 +53,39 @@ void parseExponentiation() {
 	cout << "Enter the second value: ";
 	cin >> b;
 	r=pow(a, b);
-	cout << r << endl;
+	return r;
 }
 
-void parseSquareRoot() {
+float parseSquareRoot() {
 	float a=0, r=0;
 	cout << "Enter the value: ";
 	cin >> a;
 	r=sqrt(a);
-	cout << r << endl;
+	return r;
 }
 
-void parseSine() {
+float parseSine() {
 	float a=0, r=0;
 	cout << "Enter the value: ";
 	cin >> a;
 	r=sin(a);
-	cout << r << endl;
+	return r;
 }
 
-void parseCosine() {
+float parseCosine() {
 	float a=0, r=0;
 	cout << "Enter the value: ";
 	cin >> a;
 	r=cos(a);
-	cout << r << endl;
+	return r;
 }
 
-void parseTangent() {
+float parseTangent() {
 	float a=0, r=0;
 	cout << "Enter the value: ";
 	cin >> a;
 	r=tan(a);
-	cout << r << endl;
+	return r;
 }
 
 void help() {
@@ -102,6 +105,6 @@ void help() {
 	cout << "\n\n";
 }
 
-void error() {
+string error() {
 	cout << "Error : Input is anonymous!\n";
 }

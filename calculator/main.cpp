@@ -11,31 +11,31 @@ int main(int argc, char** argv) {
 		cin >> type;
 		switch(type) {
 			case 'a':
-				parseAddition();
+				cout << parseAddition() << endl;
 			break;
 			case 'm':
-				parseSubtraction();
+				cout << parseSubtraction() << endl;
 			break;
 			case 'u':
-				parseMultiplication();
+				cout << parseMultiplication() << endl;
 			break;
 			case 'd':
-				parseDivision();
+				cout << parseDivision() << endl;
 			break;
 			case 'p':
-				parseExponentiation();
+				cout << parseExponentiation() << endl;
 			break;
 			case 'r':
-				parseSquareRoot();
+				cout << parseSquareRoot() << endl;
 			break;
 			case 's':
-				parseSine();
+				cout << parseSine() << endl;
 			break;
 			case 'c':
-				parseCosine();
+				cout << parseCosine() << endl;
 			break;
 			case 't':
-				parseTangent();
+				cout << parseTangent() << endl;
 			break;
 			case 'h':
 				help();
@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
 				flag=false;
 			break;
 			default:
-				error();
+				cout << error() << endl;
 			break;
 		}
 	}
