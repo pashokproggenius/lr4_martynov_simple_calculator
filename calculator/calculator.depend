@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1699631876 source:/home/martynov/projects/lr4_martynov_simple_calculator/calculator/main.cpp
+	<iostream>
+
