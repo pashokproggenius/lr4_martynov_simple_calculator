@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./commands.cpp"
+#include "commands.hpp"
 
 using namespace std;
 

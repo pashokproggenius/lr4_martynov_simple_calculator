@@ -1,4 +1,9 @@
 # depslib dependency file v1.0
-1699631876 source:/home/martynov/projects/lr4_martynov_simple_calculator/calculator/main.cpp
+1699632745 source:/home/martynov/projects/lr4_martynov_simple_calculator/calculator/main.cpp
 	<iostream>
+	"commands.hpp"
+
+1699632737 /home/martynov/projects/lr4_martynov_simple_calculator/calculator/commands.hpp
+	<iostream>
+	<math.h>
 
